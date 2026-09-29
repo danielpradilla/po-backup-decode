@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "po-backup-decode"
+version = "1.0.0"
+description = "Demodulate and decode Teenage Engineering PO-33 sound and pattern transfer WAVs"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+keywords = ["po-33", "pocket operator", "backup", "decoder", "qpsk"]
+dependencies = ["numpy"]
+
+[project.urls]
+Homepage = "https://github.com/danielpradilla/po-backup-decode"
+
+[project.scripts]
+po33-decode = "po33_decode:main"
+
+[tool.setuptools]
+py-modules = ["po33_decode"]

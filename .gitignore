@@ -1,0 +1,14 @@
+# Decoder output contains manufacturer material. Never commit it.
+decoded/
+out/
+*.pcm8
+
+# Transfer recordings are supplied by the user.
+*.wav
+
+__pycache__/
+*.py[cod]
+.venv/
+build/
+dist/
+*.egg-info/
